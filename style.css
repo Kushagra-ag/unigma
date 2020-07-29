@@ -105,7 +105,7 @@ ul {
 	font-family: 'Raleway', sans-serif;
 	text-align: left;
 	display: block;
-	color: #0f457f;
+	color: #2490bb;
 	font-size:15pt;
 	font-weight:600;
 }
@@ -125,7 +125,7 @@ ul {
   height: 2px;
   left: 0%;
   position: absolute;
-  background: #0f457f;
+  background: #41a3ca;
   transition: width 0.4s ease 0s;
   width: 0;
 }
