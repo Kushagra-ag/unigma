@@ -3,10 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body
 {
-	margin:0;
-	padding:0;
-	background:#fff;
 	font-family: 'Nunito Sans', sans-serif;
+	/*scrollbar-width: none;
+    -ms-overflow-style: none;*/
 }
 a
 {	text-decoration:none;	}
@@ -15,29 +14,43 @@ ul {
   padding: 0;
   list-style: none;
 }
-.outer
-{
-	width:100%;
-	height:100vh;
-	background:url('back.jpg') no-repeat center center fixed;
-	background-size:cover;
-	
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform-origin: 100% 50%;
 }
-.inner
-{
-	width:100%;
-	height:100vh;
-	background:transparent;
-	display:flex;
-	text-align:center;
-	align-items:center;
-	transition:all 0.3s linear;
-	z-index:0;
-	border-radius:3px;
-	box-shadow: 0 0px 20px rgba(0,0,0,0.29), 0 0px 6px rgba(0,0,0,0.35);
-		background:url('../bg7.svg') no-repeat center center fixed;
-	background-size:cover;
-	}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-2px) scale(3);	
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.header {
+	background-color: #fff;
+	/*background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,1)), url('../images/header.jpg');*/
+	background-repeat: no-repeat;
+	padding: 30vh 0;
+}
+
+
 .inner-hover
 {
     transform-origin: 75% 50%;
@@ -132,6 +145,10 @@ ul {
 }
 .nav-li a:hover:after { 
   width: 100%; 
+}
+
+.spacer {
+	padding: 100px 0;
 }
 
 
