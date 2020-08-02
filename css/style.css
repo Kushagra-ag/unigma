@@ -15,6 +15,8 @@ ul {
   list-style: none;
 }
 
+/*Parallax effect classes*/
+
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -42,6 +44,8 @@ ul {
   height: 100vh;
   transform-style: preserve-3d;
 }
+
+/*-------------------------*/
 
 .header {
 	background-color: #fff;
