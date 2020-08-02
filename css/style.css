@@ -168,16 +168,15 @@ ul {
 	-webkit-box-flex: 1;
 			flex: 1;
 	overflow: hidden;
-	-webkit-transition: .5s;
+	-webkit-transition: .7s;
 	transition: .5s;
-	margin: 0 2%;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 	line-height: 0;
   }
   
   .box > img {
 	width: 200%;
-	height: calc(100% - 10vh);
+	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
 	-webkit-transition: .5s;
