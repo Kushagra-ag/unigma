@@ -1,19 +1,22 @@
-$(".prod-logo").hover(function () {
-	$(".inner").addClass("inner-hover");
-	$(".nav-li").slideDown(500);
-},
-function () {
-	$(".inner").removeClass("inner-hover");
-	$(".nav-li").slideUp(500);
-}
-);
+const headerText = ['design', 'innovation', 'brand'];
 
 $(document).ready(function() {
 
-	// document.querySelector('.header').addEventListener('click', headerTransition);
-	setTimeout(headerTransition, 1000);
+	setTimeout(init, 2000)
+	setTimeout(headerTransition, 4000);
 
 })
+
+function init() {
+
+	const preloader = document.querySelector('.preloader');
+	console.log(preloader)
+
+	preloader.style.opacity = 0;
+	document.querySelector('.parallax').style.display = "block";
+
+	setTimeout(function(){preloader.style.display = "none"}, 750)
+}
 
 function headerTransition(e) {
 
@@ -24,34 +27,42 @@ function headerTransition(e) {
 
 	const headerLeft = document.querySelector('.header__left__img');
 	const headerRight = document.querySelector('.header__right__img');
+	const text = document.querySelector('.text');
 
 	headerLeft.classList.remove('noTransition');
 	headerRight.classList.remove('noTransition');
+	text.classList.remove('noTransition');
 
 	headerLeft.style.backgroundPosition = "0 36.4%";
 	headerRight.style.backgroundPosition = "0 65%";
+	text.style.transform = "translateY(-40px)";
+
 
 
 	setTimeout(function() {
 
 		headerLeft.style.backgroundPosition = "0 58.6%";
 		headerRight.style.backgroundPosition = "0 30%";
+		text.style.transform = "translateY(-80px)";
 
 		setTimeout(function() {
 
 			headerLeft.style.backgroundPosition = "0 97%";
 			headerRight.style.backgroundPosition = "0 11.3%";
+			text.style.transform = "translateY(-120px)";
 
 			setTimeout(function() {
 
 				// Reset header
 
+				text.classList.add('noTransition');
 				headerLeft.classList.add('noTransition');
 				headerRight.classList.add('noTransition');
 				headerLeft.removeAttribute('style');
 				headerRight.removeAttribute('style');
+				text.removeAttribute('style');
 				el.addEventListener('click', headerTransition);
-				
+
 			}, 1800)
 			
 
