@@ -2,8 +2,8 @@ const headerText = ['design', 'innovation', 'brand'];
 
 $(document).ready(function() {
 
-	setTimeout(init, 2000)
-	setTimeout(headerTransition, 4000);
+	setTimeout(init, 6000)
+	setTimeout(headerTransition, 9000);
 
 })
 
