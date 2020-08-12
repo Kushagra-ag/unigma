@@ -1,11 +1,11 @@
 const headerText = ['design', 'innovation', 'brand'];
 
-$(document).ready(function() {
+window.onload = function() {
 
 	setTimeout(init, 6000)
 	setTimeout(headerTransition, 9000);
 
-})
+}
 
 function init() {
 
