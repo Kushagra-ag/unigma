@@ -1,21 +1,32 @@
 const headerText = ['design', 'innovation', 'brand'];
 
-window.onload = function() {
+$(window).on("load", function() {
+
+	// document.querySelector('.header__right__img').addEventListener('load', function(){console.log('loaded'); setTimeout(init, 6000)})
 
 	setTimeout(init, 6000)
 	setTimeout(headerTransition, 9000);
 
-}
+	window.addEventListener('resize', function(e) {
+
+		console.log('yoo');
+		console.log('w- ', window.innerWidth)
+
+	});
+
+})
 
 function init() {
 
 	const preloader = document.querySelector('.preloader');
-	console.log(preloader)
+	// console.log(preloader)
 
 	preloader.style.opacity = 0;
 	document.querySelector('.parallax').style.display = "block";
 
 	setTimeout(function(){preloader.style.display = "none"}, 750)
+
+	setTimeout(headerTransition, 3000);
 }
 
 function headerTransition(e) {
@@ -62,6 +73,11 @@ function headerTransition(e) {
 				headerRight.removeAttribute('style');
 				text.removeAttribute('style');
 				el.addEventListener('click', headerTransition);
+
+				// -----------------------------------
+
+				let c1 = document.querySelector('.webite').getBoundingClientRect();console.log(c1);
+				let c2 = document.querySelector('.app').getBoundingClientRect();console.log(c2);
 
 			}, 1800)
 			

@@ -51,7 +51,7 @@ ul {
   transition: opacity .5s;
 }
 
-.preloader>img {
+.preloader>img, .preloader>video {
   position: absolute;
   width: 100%;
   top: 50%;
