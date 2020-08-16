@@ -309,3 +309,11 @@ button:active:after {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: thin;
 }
+
+.textonvideo {
+  position: absolute;
+  top: 80vh;
+  left: 32vw;
+  z-index: 1;
+
+}
