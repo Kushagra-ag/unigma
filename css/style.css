@@ -184,7 +184,6 @@ ul {
 .box:nth-child(3) {
   background-image: url('../images/test.jpg');
 }
-
   
 .box > img {
 	width: 200%;
@@ -195,12 +194,10 @@ ul {
 	transition: .5s;
   }
 
-
 .images {
   display: flex;
   flex-wrap: nowrap!important;
   min-height: 50vh;
-  max-height: 50vh;
 }
 
 .box:hover {
@@ -210,7 +207,22 @@ ul {
 .box:hover > img{
   width: 100%;
   height: 100%;
-  opacity: .8;
+}
+
+.figcaption {
+  -webkit-transition: 800ms; 
+  -o-transition: 800ms; 
+  transition: 800ms;
+  width: 100%;
+}
+
+.box[data-effect="fade-in"] figcaption {
+  height: 100%;
+  opacity: 0;
+}
+
+.box[data-effect="fade-in"]:hover figcaption {
+  opacity: 1;
 }
 
 /*----------------------------------*/
