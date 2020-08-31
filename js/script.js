@@ -5,12 +5,7 @@ window.addEventListener("load", function() {
 
 	console.log('loaded');
 
-	let img = document.querySelector('.imgRight');
-	console.log(img)
-
-	img.addEventListener('load', function(){console.log('loadedright')})
-
-	// setTimeout(init, 6000)
+	setTimeout(init, 6000)
 	setTimeout(headerTransition, 9000);
 
 

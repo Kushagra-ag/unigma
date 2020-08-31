@@ -43,7 +43,7 @@ ul {
 /*Preloader classes*/
 
 .preloader {
-  display: none;
+  display: block;
   max-height: 100vh;
   min-height: 100vh;
   max-width: 100vw;
@@ -61,7 +61,7 @@ ul {
 /*Parallax effect classes*/
 
 .parallax {
-  /*display: none;*/
+  display: none;
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -99,6 +99,7 @@ ul {
 
 .header__left, .header__right, .header__text {
   overflow: hidden;
+  font-size: 150%
 }
 
 .header__left__img, .header__left--2, .header__left--3, .header__right__img, .header__right--2, .header__right--3 {
