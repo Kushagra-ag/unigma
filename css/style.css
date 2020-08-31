@@ -27,7 +27,7 @@ body {
 	font-family: 'metropolis', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
-  font-size: 150%!important;
+  /*font-size: 150%!important;*/
 	
 }
 a {	
@@ -43,7 +43,7 @@ ul {
 /*Preloader classes*/
 
 .preloader {
-  display: block;
+  display: none;
   max-height: 100vh;
   min-height: 100vh;
   max-width: 100vw;
@@ -61,7 +61,7 @@ ul {
 /*Parallax effect classes*/
 
 .parallax {
-  display: none;
+  /*display: none;*/
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -127,6 +127,10 @@ ul {
   transform: translate(-50%, -50%);
   max-height: 40px;
   z-index: 10;
+}
+
+.imageLoader {
+  z-index: -1;
 }
 
 .text {
@@ -229,7 +233,7 @@ ul {
 
 .heading {
   position: relative;
-  font-size: 250%;
+  font-size: 220%;
   letter-spacing: 35px;
 }
 
@@ -291,16 +295,6 @@ button:active:after {
 }
 
 /*--------------------------------------*/
-
-
-.website {
-
-  font-size: 500%;
-  text-transform: uppercase;
-  -webkit-text-stroke: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: thin;
-}
 
 
 
