@@ -174,20 +174,36 @@ ul {
   width: 100%;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
+  border-radius: 5px;
   
 }
 
 
-.box:nth-child(1), .box:nth-child(3) {
-  background-image: url('../images/website.jpg');
+.box:nth-child(1) {
+  background-image: url('../images/iphone.png');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
 }
 
 .box:nth-child(2) {
   background-image: url('../images/website.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 .box:nth-child(3) {
-  background-image: url('../images/test.jpg');
+  background-image: url('../images/branding.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
   
 .box > img {
