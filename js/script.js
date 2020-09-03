@@ -12,8 +12,8 @@ window.addEventListener("load", function() {
 
 		console.log('image loaded')
 
-		/// setTimeout(init, 6000)
-		// setTimeout(headerTransition, 9000);
+		setTimeout(init, 6000)
+		setTimeout(headerTransition, 9000);
 
 	})
 
