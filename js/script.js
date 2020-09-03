@@ -5,14 +5,26 @@ window.addEventListener("load", function() {
 
 	console.log('loaded');
 
-	setTimeout(init, 6000)
-	setTimeout(headerTransition, 9000);
+	// image loading
+
+	let image = new Image();
+	image.addEventListener('load', function() {
+
+		console.log('image loaded')
+
+		/// setTimeout(init, 6000)
+		// setTimeout(headerTransition, 9000);
+
+	})
+
+	image.src = './images/right2.jpg';
 
 
 });
 
 function init() {
 
+	console.log("in init")
 	const preloader = document.querySelector('.preloader');
 
 	preloader.style.opacity = 0;
@@ -22,6 +34,8 @@ function init() {
 
 	setTimeout(headerTransition, 3000);
 }
+
+// ----------------------
 
 $('.gallery ul li a').click(function() {
 	var itemID = $(this).attr('href');
@@ -40,10 +54,11 @@ $(".gallery ul li a").click(function() {
 	}, 400);
 });
 
+// ---------------------------------
+
 function headerTransition(e) {
 
 	const el = (e && e.currentTarget) || document.querySelector('.header');
-	console.log(el)
 	
 	el.removeEventListener('click', headerTransition);
 
