@@ -27,7 +27,7 @@ body {
 	font-family: 'metropolis', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
-  font-size: 150%!important;
+  /*font-size: 150%!important;*/
 	
 }
 a {	
@@ -99,6 +99,7 @@ ul {
 
 .header__left, .header__right, .header__text {
   overflow: hidden;
+  font-size: 150%
 }
 
 .header__left__img, .header__left--2, .header__left--3, .header__right__img, .header__right--2, .header__right--3 {
@@ -127,6 +128,10 @@ ul {
   transform: translate(-50%, -50%);
   max-height: 40px;
   z-index: 10;
+}
+
+.imageLoader {
+  z-index: -1;
 }
 
 .text {
@@ -229,7 +234,7 @@ ul {
 
 .heading {
   position: relative;
-  font-size: 250%;
+  font-size: 220%;
   letter-spacing: 35px;
 }
 
@@ -291,16 +296,6 @@ button:active:after {
 }
 
 /*--------------------------------------*/
-
-
-.website {
-
-  font-size: 500%;
-  text-transform: uppercase;
-  -webkit-text-stroke: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: thin;
-}
 
 
 
