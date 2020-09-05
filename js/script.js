@@ -10,14 +10,21 @@ window.addEventListener("load", function() {
 	let image = new Image();
 	image.addEventListener('load', function() {
 
-		console.log('image loadedd')
+		console.log('image1 loaded');
 
-		setTimeout(init, 6000)
-		setTimeout(headerTransition, 9000);
+		let image2 = new Image();
+		image2.addEventListener('load', function() {
+
+			console.log("image2 loaded");
+			setTimeout(init, 6000)
+			setTimeout(headerTransition, 9000);
+		})
+
+		image2.src = './images/right.jpg';
 
 	})
 
-	image.src = './images/right2.jpg';
+	image.src = './images/left.jpg';
 
 
 });

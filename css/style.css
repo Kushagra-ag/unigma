@@ -116,12 +116,12 @@ ul {
 }
 
 .header__left__img {
-  background-image: url('../images/left2.jpg');
+  background-image: url('../images/left.jpg');
   background-position: 0 11.3%;
 }
 
 .header__right__img {
-  background-image: url('../images/right2.jpg');
+  background-image: url('../images/right.jpg');
   background-position: 0 97%;
 }
 
