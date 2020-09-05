@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 	let image = new Image();
 	image.addEventListener('load', function() {
 
-		console.log('image loaded')
+		console.log('image loadedd')
 
 		setTimeout(init, 6000)
 		setTimeout(headerTransition, 9000);

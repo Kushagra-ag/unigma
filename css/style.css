@@ -51,11 +51,15 @@ ul {
   transition: opacity .5s;
 }
 
-.preloader>img, .preloader>video {
+.preloader-img {
   position: absolute;
-  width: 100%;
+  max-width: 100vw;
+  width: 200px;
+  max-height: 100vh;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 /*Parallax effect classes*/
