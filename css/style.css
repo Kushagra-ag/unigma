@@ -140,6 +140,7 @@ ul {
 .text {
   transition: all 1.4s cubic-bezier(.86,.01,0,1);
   line-height: 170%;
+  font-size: 1.5rem;
 }
 
 .noTransition {
@@ -150,7 +151,7 @@ ul {
 
 .box {
   overflow: hidden;
-	-webkit-transition: .5s;
+	-webkit-transition: width 2s linear .1s;
   min-height: 60vh;
 	transition: .5s;
 	margin: 0 2%;
@@ -338,12 +339,12 @@ button:active:after {
 .gallery {
   padding-top: 40px;
   position: relative;
+  min-height: 500px;
   overflow: hidden;
 }
 
-.gallery ul {
-  padding-top: 50px;
-  position: relative;
+.gallery .item {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .gallery .item a {
@@ -496,7 +497,7 @@ button:active:after {
 
 @media (max-width: 981px) {
 
-  body, text {
+  body {
     font-size: 1.5rem;
   }
 }
