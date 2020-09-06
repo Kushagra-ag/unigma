@@ -16,8 +16,8 @@ window.addEventListener("load", function() {
 		image2.addEventListener('load', function() {
 
 			console.log("image2 loaded");
-			setTimeout(init, 6000)
-			setTimeout(headerTransition, 9000);
+			setTimeout(init, 2000)
+			setTimeout(headerTransition, 5000);
 		})
 
 		image2.src = './images/right.jpg';
@@ -44,18 +44,20 @@ function init() {
 
 // ----------------------
 
-$('.gallery ul li a').click(function() {
+$('.gallery .item a').click(function() {
 	var itemID = $(this).attr('href');
-	$('.gallery ul').addClass('item_open');
+	$('.gallery .row').addClass('item_open');
 	$(itemID).addClass('item_open');
+	$('.gallery').css('maxHeight', '800px');
 	return false;
 });
 $('.close').click(function() {
-	$('.port, .gallery ul').removeClass('item_open');
+	$('.port, .gallery .row').removeClass('item_open');
+	$('.gallery').css('maxHeight', 'unset');
 	return false;
 });
 
-$(".gallery ul li a").click(function() {
+$(".gallery .item a").click(function() {
 	$('html, body').animate({
 		scrollTop: parseInt($("#top").offset().top)
 	}, 400);
