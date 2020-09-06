@@ -93,7 +93,7 @@ ul {
   transform-style: preserve-3d;
 }
 
-/*-------------------------*/
+/*Header classes*/
 
 .header {	
 	max-height: 60vh;
@@ -148,39 +148,17 @@ ul {
 
 /* slider section */
 
-
-/* .letter {
-  display: inline-block;  
-  color: #000;
-  position: relative;
-  margin-top: 100px;
-  font-size: 300%;
-  font-weight: 600;
-  background-color: #ffffffaa;
-  padding: 10px;
-  border-radius: 10px;
-  -webkit-text-stroke: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: thin;
-  z-index: 10;
-  font-family: 'Montserrat'
-
-} */
-
 .box {
   overflow: hidden;
-  text-align: center;
-  padding-top: 50vh;
 	-webkit-transition: .5s;
+  min-height: 60vh;
 	transition: .5s;
 	margin: 0 2%;
   width: 100%;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  line-height: 0;
   border-radius: 5px;
   
 }
-
 
 .box:nth-child(1) {
   background-image: url('../images/iphone.png');
@@ -209,14 +187,11 @@ ul {
   background-size: cover;
 }
   
-.box > img {
-	width: 200%;
-	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	-webkit-transition: .5s;
-	transition: .5s;
-  }
+figcaption {
+  position: relative;
+  color: #fff;
+  z-index: 10;
+}
 
 .images {
   display: flex;
@@ -225,12 +200,17 @@ ul {
 }
 
 .box:hover {
- width: 200%;
+ width: 1000%;
 }
 
-.box:hover > img{
-  width: 100%;
-  height: 100%;
+.bl-overlay {
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.box:hover .bl-overlay {
+  opacity: .5
 }
 
 .figcaption {
