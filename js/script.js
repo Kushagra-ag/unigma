@@ -48,7 +48,7 @@ $('.gallery .item a').click(function() {
 	var itemID = $(this).attr('href');
 	$('.gallery .row').addClass('item_open');
 	$(itemID).addClass('item_open');
-	$('.gallery').css('maxHeight', '800px');
+	$('.gallery').css('maxHeight', '1000px');
 	return false;
 });
 $('.close').click(function() {
