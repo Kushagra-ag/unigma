@@ -356,7 +356,7 @@ button:active:after {
 } */
 
 .gallery {
-  padding: 40px 0 300px;
+  padding-top: 40px;
   position: relative;
   overflow: hidden;
 }
