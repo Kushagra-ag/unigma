@@ -20,11 +20,11 @@ window.addEventListener("load", function() {
 			setTimeout(headerTransition, 3500);
 		})
 
-		image2.src = './images/right.jpg';
+		image2.src = './images/right.webp';
 
 	})
 
-	image.src = './images/left.jpg';
+	image.src = './images/left.webp';
 
 
 });
