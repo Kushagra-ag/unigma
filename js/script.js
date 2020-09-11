@@ -16,8 +16,8 @@ window.addEventListener("load", function() {
 		image2.addEventListener('load', function() {
 
 			console.log("image2 loaded");
-			setTimeout(init, 500)
-			setTimeout(headerTransition, 3500);
+			init();
+			setTimeout(headerTransition, 3000);
 		})
 
 		image2.src = './images/right.webp';
