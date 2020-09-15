@@ -27,7 +27,7 @@ body {
 	font-family: 'metropolis', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
-  /*font-size: 150%!important;*/
+  font-size: 1.2rem!important;
 	
 }
 a {	
@@ -236,6 +236,7 @@ figcaption {
   position: relative;
   font-size: 220%;
   letter-spacing: 35px;
+  white-space: nowrap;
 }
 
 .bar {

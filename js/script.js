@@ -1,9 +1,9 @@
 const headerText = ['design', 'innovation', 'brand'];
 
 
-window.addEventListener("load", function() {
+(function onLoad() {
 
-	console.log('loaded');
+	console.log('in onLoad');
 
 	// image loading
 
@@ -27,7 +27,7 @@ window.addEventListener("load", function() {
 	image.src = './images/left.webp';
 
 
-});
+})();
 
 function init() {
 
@@ -48,12 +48,14 @@ $('.gallery .item a').click(function() {
 	var itemID = $(this).attr('href');
 	$('.gallery .row').addClass('item_open');
 	$(itemID).addClass('item_open');
-	$('.gallery').css('maxHeight', '1000px');
+	$('.gallery').css('maxHeight', '1200px');
+	$('.gallery').css('minHeight', '750px');
 	return false;
 });
 $('.close').click(function() {
 	$('.port, .gallery .row').removeClass('item_open');
 	$('.gallery').css('maxHeight', 'unset');
+	$('.gallery').css('minHeight', 'unset');
 	return false;
 });
 
