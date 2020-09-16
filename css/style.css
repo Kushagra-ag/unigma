@@ -501,9 +501,16 @@ button:active:after {
 
 /*Media queries*/
 
-@media (max-width: 981px) {
+@media (max-width: 991px) {
 
   body {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .whoarewe {
+    width: 100%!important;
   }
 }
