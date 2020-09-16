@@ -23,14 +23,18 @@
     scrollbar-width: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'metropolis', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
   font-size: 1.2rem!important;
-	
 }
-a {	
+
+a, a:hover {	
   text-decoration:none;	
 }
 
@@ -147,45 +151,46 @@ ul {
   transition: none;
 }
 
+.contactBtn {
+  color: #fff;
+  background-color: #000;
+  box-shadow: none;
+}
+
+.contactBtn:hover {
+  color: #fff;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5)
+}
+
 /* slider section */
 
 .box {
-  overflow: hidden;
-	-webkit-transition: width 2s linear .1s;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
   min-height: 60vh;
-	transition: .5s;
-	margin: 0 2%;
+  margin: 0 2%;
   width: 100%;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  overflow: hidden;
+  transition: width 5s linear .1s;
+  -webkit-transition: width 2s linear .1s;
   
 }
 
 .box:nth-child(1) {
-  background-image: url('../images/iphone.png');
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; 
+  background-image: url('../images/iphone.png'); 
 }
 
 .box:nth-child(2) {
   background-image: url('../images/website.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
 }
 
 .box:nth-child(3) {
   background-image: url('../images/branding.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
 }
   
 figcaption {
@@ -408,8 +413,8 @@ button:active:after {
   background-color: #fafafa;
   z-index: 103;
   visibility: hidden;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
   border-bottom: 1px solid #d0d0d0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
