@@ -34,7 +34,7 @@ body {
   font-size: .8rem!important;
 }
 
-a, a:hover {	
+a {	
   text-decoration:none;	
 }
 
@@ -498,6 +498,16 @@ button:active:after {
 
 
 /* end typeform */
+
+/*----------------------*/
+
+#bottom {
+  position: absolute;
+  top: 8500px;
+  z-index: -10;
+}
+
+/*---------------*/
 
 /*Media queries*/
 
