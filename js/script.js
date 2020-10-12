@@ -16,8 +16,8 @@ const headerText = ['design', 'innovation', 'brand'];
 		image2.addEventListener('load', function() {
 
 			console.log("image2 loaded");
-			// init();
-			// setTimeout(headerTransition, 3000);
+			init();
+			setTimeout(headerTransition, 3000);
 		})
 
 		image2.src = './images/right.webp';
