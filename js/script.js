@@ -55,7 +55,7 @@ $('.gallery .item a').click(function() {
 $('.close').click(function() {
 	$('.port, .gallery .row').removeClass('item_open');
 	$('.gallery').css('maxHeight', 'unset');
-	$('.gallery').css('minHeight', 'unset');
+	setTimeout(function(){$('.gallery').css('minHeight', 'unset')}, 500);
 	return false;
 });
 
