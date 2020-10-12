@@ -16,7 +16,7 @@ const headerText = ['design', 'innovation', 'brand'];
 		image2.addEventListener('load', function() {
 
 			console.log("image2 loaded");
-			init();
+			setTimeout(init, 1000);
 			setTimeout(headerTransition, 3000);
 		})
 
