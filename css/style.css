@@ -31,7 +31,7 @@ body {
 	font-family: 'metropolis', sans-serif!important;
   font-weight: 400;
   background-color: #fff;
-  font-size: .8rem!important;
+  /*font-size: .8rem!important;*/
 }
 
 a {	
@@ -506,7 +506,7 @@ button:active:after {
 
 #bottom {
     position: absolute;
-    top: 8500px;
+    top: 7500px;
     z-index: -10;
 }
 
