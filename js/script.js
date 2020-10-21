@@ -3,8 +3,6 @@ const headerText = ['design', 'innovation', 'brand'];
 
 (function onLoad() {
 
-	console.log('in onLoad');
-
 	// image loading
 
 	let image = new Image();
@@ -17,7 +15,7 @@ const headerText = ['design', 'innovation', 'brand'];
 
 			console.log("image2 loaded");
 			setTimeout(init, 1000);
-			setTimeout(headerTransition, 3000);
+			setTimeout(headerTransition, 4000);
 		})
 
 		image2.src = './images/right.webp';
@@ -31,7 +29,7 @@ const headerText = ['design', 'innovation', 'brand'];
 
 function init() {
 
-	console.log("in init")
+	// console.log("in init")
 	const preloader = document.querySelector('.preloader');
 
 	preloader.style.opacity = 0;
@@ -39,7 +37,6 @@ function init() {
 
 	setTimeout(function(){preloader.style.display = "none"}, 750)
 
-	setTimeout(headerTransition, 3000);
 }
 
 // ----------------------
