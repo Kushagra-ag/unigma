@@ -39,7 +39,7 @@ function init() {
 
 	setTimeout(function(){preloader.style.display = "none"}, 750)
 
-	setTimeout(headerTransition, 3000);
+	setTimeout(headerTransition, 4000);
 }
 
 // ----------------------
