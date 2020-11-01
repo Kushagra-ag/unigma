@@ -87,7 +87,7 @@ ul {
   transform: translateZ(0);
 }
 .parallax__layer--back {
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-1.5px) scale(2.5);
 }
 
 .parallax__group {
